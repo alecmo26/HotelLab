@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HotelLab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  </head>
+  <body class="container-fluid">
+    <div class="topnav">
+      <a class="active" href="#home">Alec Moore</a>
+      <a href="https://github.com/alecmo26/HotelLab" target= "_blank">CODE</a>
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Falecmo26.github.io%2FHotelLab%2F" target= "_blank"> Check Page Validity</a>
+    </div>
+
+    <div class="row"></div>
+
+      <!-- this is my name card -->
+      <div class="col-sm-8 offset-sm-2">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Band Registration Form</h2>
+            <p class="card-text">Please fill out all information below</p>
+
+            <label for="userName" class="form-label">What is your first and last name?</label>
+            <input
+              type="text"
+              id="userName"
+              class="form-control"
+              name="userName"
+            />
+            <br />
+            <!-- Email -->
+            <form>
+              
+              <label for="userName" class="form-label">Email Address</label>
+            
+              <input type="email" id="email" name="email" placeholder="squidward@gmail.com">
+            
+              <input type="submit" value="Send confirmation email">
+            
+            </form>
+            <!-- Phone# -->
+            <form>
+              
+              <label for="userName" class="form-label">Phone Number</label>
+            
+              <input type="text" id="phoneNumber" name="userName" placeholder="(256) ###-####" required>
+            
+              <input id="submitButton" type="reset" value="Clear">
+            
+            </form>
+            <br />
+            <!-- Birthday for reasons -->
+            <form>
+              <label for="birthdaytime" class="form-label">Birthday (date and time):</label>
+              <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+            </form>
+            <br />
+            <!-- Radio -->
+            <p>Select your instrument or if you are a singer:</p>
+<div>
+  <input type="radio" name="size" value="Guitar" id="xs" required>
+  <label for="xs" class="form-label">Guitar</label>
+</div>
+<div>
+  <input type="radio" name="size" value="Drums" id="s" required>
+  <label for="s" class="form-label">Drums</label>
+</div>
+<div>
+  <input type="radio" name="size" value="Piano" id="m" required>
+  <label for="m" class="form-label">Piano</label>
+</div>
+<div>
+  <input type="radio" name="size" value="Bass" id="l" required>
+  <label for="l" class="form-label">Bass</label>
+</div>
+<div>
+  <input type="radio" name="size" value="Tamberine" id="xl" required>
+  <label for="xl" class="form-label">Tamberine</label>
+</div>
+<div>
+  <input type="radio" name="size" value="Singer" id="xxl" required>
+  <label for="xxl" class="form-label">Singer</label>
+</div>
+<p>
+  <button id="btn">Show Selected Instrument</button>
+</p>
+
+<p id="output"></p>
+            <br />
+            <!-- Drop down -->
+            <form>
+              <label for="level" class="form-label">How good are you at playing this instrument</label>
+              <select name="cars" id="level">
+                <option value="beginner">Beginner</option>
+                <option value="moderate">Moderate</option>
+                <option value="expert">Expert</option>
+              </select>
+              <br><br>
+            </form>
+ 
+            <br />
+            <!-- Check Box -->
+            <label for="userName" class="form-label">What days are you available to practice?</label>
+            Monday: <input type="checkbox" id="myCheck1" onclick="myFunction()">
+            Tuesday: <input type="checkbox" id="myCheck2" onclick="myFunction()">
+            Wednesday: <input type="checkbox" id="myCheck3" onclick="myFunction()">
+            Thursday: <input type="checkbox" id="myCheck4" onclick="myFunction()">
+            Friday: <input type="checkbox" id="myCheck5" onclick="myFunction()">
+            Saturday: <input type="checkbox" id="myCheck6" onclick="myFunction()">
+            Sunday: <input type="checkbox" id="myCheck7" onclick="myFunction()">
+            <br />
+            <!-- Textarea -->
+            <form>
+              <p>Why are you interested in joining our band?</p>
+              <label for="w3review" ></label>
+              <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+              <br>
+            </form>
+            <br />
+            <!-- Password -->
+            <form>
+              
+              <label for="userName" class="form-label">If referred by a member of the band please enter the password they gave you</label>
+            
+              <input type="password" id="userPassword" name="userName">
+            
+              <input id="submit" type="reset" value="Clear">
+            
+            </form>
+
+
+            <br />
+            <a href="https://alecmo26.github.io/typingtest/" class="btn btn-primary" target= "_blank">Submit Form</a>
+
+
+          </div>
+        </div>
+      </div>
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
